@@ -1,0 +1,30 @@
+import java.util.Random;
+
+import org.jointheleague.graphical.robot.Robot;
+
+public class Houses {
+	static Robot bob = new Robot();
+	public static void main(String[] args){
+		
+		bob.setSpeed(10);
+		bob.moveTo(10, 900);
+		bob.penDown();
+		bob.turn(90);
+		Random myRandom = new Random();
+		for(int i=0; i<10; i++){	
+		int x = myRandom.nextInt(400) + 100;
+		draw(x);
+	}
+}	
+		public static void draw(int x){
+			bob.move(30);
+			bob.turn(-90);
+			bob.move(x);
+			bob.turn(90);
+			bob.move(50);
+			bob.turn(90);
+			bob.move(x);
+			bob.turn(-90);
+		}
+	
+}

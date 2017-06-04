@@ -1,0 +1,19 @@
+import org.jointheleague.graphical.robot.Robot;
+
+public class Houses {
+	
+	public static void main(String[] args){
+		Robot bob = new Robot();
+		bob.moveTo(1700, 900);
+		bob.penDown();
+		bob.turn(-90);
+		bob.move(30);
+		bob.turn(90);
+		bob.move(100);
+		bob.turn(-90);
+		bob.move(50);
+		bob.turn(-90);
+		bob.move(100);
+		bob.turn(90);
+	}
+}

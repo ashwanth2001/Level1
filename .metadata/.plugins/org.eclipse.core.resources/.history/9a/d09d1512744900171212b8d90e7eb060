@@ -1,0 +1,27 @@
+import org.jointheleague.graphical.robot.Robot;
+
+public class Houses {
+	Robot bob = new Robot();
+	public static void main(String[] args){
+		int x = 0;
+		Robot bob = new Robot();
+		bob.setSpeed(10);
+		bob.moveTo(10, 900);
+		bob.penDown();
+		bob.turn(90);
+		for(int i=0; i<10; i++){
+			draw();
+		}
+	}
+	public static void draw(){
+		bob.move(30);
+		bob.turn(-90);
+		bob.move(100);
+		bob.turn(90);
+		bob.move(50);
+		bob.turn(90);
+		bob.move(100);
+		bob.turn(-90);
+		}
+	}
+
