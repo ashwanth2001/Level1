@@ -28,6 +28,7 @@ public class ChuckleClicker implements ActionListener {
 		j.add(panel);
 		j.pack();
 		j.setVisible(true);
+		j.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 	}
 
@@ -35,6 +36,7 @@ public class ChuckleClicker implements ActionListener {
 	public void actionPerformed(ActionEvent e) {
 		// TODO Auto-generated method stub
 		if(e.getSource() == b1){
+			 //int a = Math.random();
 			JOptionPane.showMessageDialog(null, "Where do animals go when their tails fall off?");
 		}
 		else if(e.getSource() == b2){
