@@ -20,13 +20,14 @@ public class Tweet implements ActionListener {
 	JButton button = new JButton("Search");
 	JTextField text = new JTextField(25);
 	JPanel panel = new JPanel();
+
 	public static void main(String[] args) {
 		Tweet t = new Tweet();
 		t.createUI();
 	}
 
 	public void createUI() {
-		
+
 		panel.add(text);
 		panel.add(button);
 		J.add(panel);
@@ -60,7 +61,7 @@ public class Tweet implements ActionListener {
 		// TODO Auto-generated method stub
 		String a = getLatestTweet(text.getText());
 		JOptionPane.showMessageDialog(null, a);
-		
+
 	}
 
 }
